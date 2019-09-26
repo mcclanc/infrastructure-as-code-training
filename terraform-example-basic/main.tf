@@ -6,7 +6,7 @@ provider "aws" {
 # Create an EC2 instance
 resource "aws_instance" "example" {
   # AMI ID for Amazon Linux AMI 2018.03.0 (HVM)
-  ami           = "ami-0c64dd618a49aeee8"
+  ami           = "ami-03659409b9c7d0c5f"
   instance_type = "t3.micro"
 
   tags = {
