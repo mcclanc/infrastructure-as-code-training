@@ -3,6 +3,10 @@ provider "aws" {
   region = "us-west-1"
 }
 
+variable "name" {
+  type = string
+}
+
 # Create an EC2 instance
 resource "aws_instance" "example" {
   # AMI ID for Amazon Linux AMI 2018.03.0 (HVM)
@@ -10,7 +14,6 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "example"
+    Name = var.name
   }
 }
-
