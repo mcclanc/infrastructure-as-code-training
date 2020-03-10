@@ -5,6 +5,7 @@ provider "azurerm" {
     client_secret   = var.cl_secret
     tenant_id       = var.ten_id
     version         = "=2.0.0"
+    features {}
 }
 
 # Set variables
